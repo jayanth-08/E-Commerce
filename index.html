@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+        integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light shadow">
+
+            <div class="container-fluid">
+
+                <a href="#" class="navbar-brand">E-Commerce</a>
+                <button href="#hamburger"
+                    class=" d-lg-none d-sm-block d-md-block  btn d-lg-sm-none btn-muted btn-outline"
+                    data-bs-toggle="offcanvas" role="button" aria-controls="hamburger"><span
+                        class="navbar-toggler-icon d-lg-none "></span></button>
+
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="hamburger" aria-labelledby="sidebar-label">
+
+                    <div class="offcanvas-header">
+                        <h4 class="offcanvas-title" id="sidebar-label">E-Commerce</h4>
+                        <button class="btn-close mx-1" data-bs-dismiss="offcanvas" aria-label=""></button>
+                    </div>
+
+                    <ul class="navbar-nav text-center d-flex justify-content-end px-5 ">
+                        <li><a href="/" class="nav-link px-lg-4 px-md-3">Home</a></li>
+                        <li><a href="/wishlist.html" class="nav-link px-lg-4 px-md-3 position-relative">Wishlist
+                                <span id="wishlistCounter"
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                    0
+                                </span>
+                            </a></li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="container my-2">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Search here..." id="search"
+                                aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <span class="input-group-text" id="basic-addon2">Search</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row" id="products">
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="scripts/app.js"></script>
+    <!-- <script src="scripts/search.js"></script>
+    <script src="scripts/favbtn.js"></script>
+    <script src="scripts/render.js"></script> -->
+
+</body>
+
+</html>
